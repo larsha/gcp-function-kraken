@@ -3,16 +3,17 @@
 package function
 
 import (
-	"cloud.google.com/go/storage"
 	"context"
 	"errors"
 	"fmt"
-	"github.com/kraken-io/kraken-go"
 	"io"
 	"log"
 	"net/http"
 	"os"
 	"path/filepath"
+
+	"cloud.google.com/go/storage"
+	"github.com/kraken-io/kraken-go"
 )
 
 // Writable folder available in Google Cloud Functions
