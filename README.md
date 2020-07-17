@@ -15,7 +15,7 @@ export KRAKEN_SECRET_KEY=""
 gcloud functions deploy ImageCompressor \
     --set-env-vars KRAKEN_API_KEY=$KRAKEN_API_KEY,KRAKEN_SECRET_KEY=$KRAKEN_SECRET_KEY \
     --region europe-west1 \
-    --runtime go111 \
+    --runtime go113 \
     --trigger-resource $BUCKET \
     --trigger-event google.storage.object.finalize
-``` 
+```
